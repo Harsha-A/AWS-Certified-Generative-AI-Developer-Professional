@@ -4198,7 +4198,36 @@ The option that says: AWS Elastic Beanstalk is incorrect because it is a platfor
 
 ------------------
 
+Incorrect2 / 3 Points
+Unsupervised learning is a kind of machine learning in which the algorithm is developed on data without labeled results. Unsupervised learning, as opposed to supervised learning, which requires the model to be given both input data and output labels, works with data that only contains input features. Unsupervised learning seeks to find underlying patterns, structures, or relationships in data without explicit instruction on the desired result.
 
+Machine learning is teaching a computer to make predictions or judgments. To train a model, you first need an algorithm and some example data. Then, you integrate your model into your application to generate real-time and scalable insights. Supervised and unsupervised learning are two distinct types of algorithms.
+
+
+
+In unsupervised learning, the model is tasked with exploring the data and finding hidden structures within it. This can involve grouping similar data points together (clustering), discovering associations between different features (association rule learning), or estimating the probability distribution of the data (probability density estimation).
+
+Hence, the correct answers are:
+
+– To group users with similar viewing habits: Clustering 
+
+– To identify common patterns in the types of shows watched together: Association rule learning
+
+– To estimate how users’ preferences are spread across different genres: Probability density 
+
+The option that says: Dimensionality reduction is incorrect because, while it is a valuable technique for simply reducing the number of features or variables in a dataset, it does not directly achieve the specific objectives mentioned in the scenario.
+
+The option that says: Neural network is incorrect because it is just a supervised learning method that requires labeled data to train a model, which does not align with the unsupervised nature of the tasks in the scenario.
+
+The option that says: Decision tree is incorrect because this option is primarily used in supervised learning for classification and regression tasks, making them unsuitable for the unsupervised learning objectives outlined in the scenario.
+
+The option that says: Linear regression is incorrect because it is a supervised learning technique only used to model relationships between input features and a continuous output variable, which does not fit the unsupervised learning tasks described.
+
+The option that says: Logistic regression is incorrect because it is another supervised learning algorithm, typically used for binary classification, and is not applicable for the unsupervised tasks mentioned in the scenario.
+
+ ---------------------------
+
+ 
 
 
 
