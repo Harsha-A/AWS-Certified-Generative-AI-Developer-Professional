@@ -4604,7 +4604,49 @@ The option that says: Asynchronous Inference is incorrect because asynchronous i
 ----------------------
 
 
+AWS Artifact is a comprehensive and central resource for accessing AWS’s compliance-related information. It offers on-demand access to AWS’s security and compliance reports, including audit artifacts such as Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from the International Organization for Standardization (ISO). AWS Artifact is designed to help customers manage their compliance posture effectively by offering a self-service portal where they can retrieve compliance documentation. This service allows customers to meet regulatory requirements, such as HIPAA, HITRUST, and other industry-specific standards, by ensuring they have the necessary documentation to demonstrate compliance to auditors and regulatory bodies.
 
+<img width="1920" height="918" alt="image" src="https://github.com/user-attachments/assets/63f1ab97-6b41-47e4-b2cf-125d50a5a147" />
+
+
+Furthermore, AWS Artifact provides customers with an easy way to download and review compliance documents anytime, simplifying the compliance and auditing process. It is particularly advantageous for organizations in highly regulated industries, such as healthcare, finance, and government sectors, where adherence to strict regulatory requirements is crucial. By utilizing AWS Artifact, organizations can confidently build and manage their cloud infrastructure on AWS, knowing they have access to the essential compliance documentation needed to support their regulatory and compliance obligations.
+
+Hence, the correct answer is: AWS Artifact.
+
+The option that says: Amazon Macie is incorrect because this is just a data security service that uses machine learning to automatically discover, classify, and protect sensitive data within your AWS environment. It is particularly focused on identifying and alerting users about personally identifiable information (PII) and other sensitive data stored in Amazon S3.
+
+The option that says: AWS CloudTrail is incorrect because this service is primarily for governance, compliance, and operational and risk auditing of your AWS account. It records AWS API calls and events for your account, providing detailed logs of user activity. Its primary focus is to provide visibility into API activity rather than to supply the compliance documentation needed for regulatory audits.
+
+The option that says: AWS Security Hub is incorrect because this security service only provides a comprehensive view of your high-priority security alerts and compliance status across AWS accounts.
+
+-----------------------
+
+Amazon SageMaker Model Monitor is a capability of Amazon SageMaker that monitors machine learning models in production for data drift, concept drift, and other issues that may impact model quality. It continuously monitors the data inputs and model predictions to detect deviations from the model’s expected behavior. Model Monitor can automatically alert users when it detects issues, allowing them to take corrective actions.
+
+Amazon Augmented AI (Amazon A2I) is a service that makes it easy to build human review workflows for machine learning predictions. It allows developers to incorporate human review into their machine learning applications to improve model accuracy and ensure compliance with regulatory or business requirements. With Amazon A2I, developers can create human review workflows, manage the workforce, and integrate human review into their applications.
+
+<img width="1362" height="957" alt="image" src="https://github.com/user-attachments/assets/457086f9-8b63-4aed-9183-e3f8ae8b7bfd" />
+
+
+By using Amazon SageMaker Model Monitor and Amazon Augmented AI together, the company can comprehensively monitor the performance of your deployed machine learning model, receive alerts when issues are detected, and incorporate human review to validate or correct the model’s predictions, ultimately ensuring the model’s reliability and accuracy over time.
+
+Hence, the correct answers are:
+
+– Amazon SageMaker Model Monitor
+
+– Amazon A2I (Amazon Augmented AI)
+
+The option that says: Amazon Bedrock is incorrect because it’s mainly a service that offers leading foundation models (FMs) and a set of capabilities to quickly build and scale generative artificial intelligence (generative AI) applications, not for monitoring models or incorporating human review in production.
+
+The option that says: Amazon SageMaker Ground Truth is incorrect because this service just provides data labeling capabilities, which are useful during the model training phase. However, it is not directly related to monitoring or human review of deployed models in production environments. Additionally, Ground Truth is primarily used to create high-quality training datasets by leveraging human annotators or automated labeling workflows.
+
+The option that says: Amazon SageMaker Data Wrangler is incorrect because it’s a feature within Amazon SageMaker that helps with data preparation and feature engineering tasks. It provides tools for data exploration, transformation, and feature creation, which are essential steps in the machine learning model development process. Similar to Amazon SageMaker Ground Truth this feature is not designed for monitoring the performance of deployed models or incorporating human review of model predictions.
+
+----------------------
+
+
+ 
+ 
 
 
 
