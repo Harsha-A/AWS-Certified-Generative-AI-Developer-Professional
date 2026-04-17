@@ -4197,12 +4197,14 @@ The option that says: AWS Elastic Beanstalk is incorrect because it is a platfor
 
 
 ------------------
+<img width="1600" height="896" alt="image" src="https://github.com/user-attachments/assets/6ea3b9d7-8791-4b4b-8d82-12fa5f645d88" />
 
-Incorrect2 / 3 Points
+
 Unsupervised learning is a kind of machine learning in which the algorithm is developed on data without labeled results. Unsupervised learning, as opposed to supervised learning, which requires the model to be given both input data and output labels, works with data that only contains input features. Unsupervised learning seeks to find underlying patterns, structures, or relationships in data without explicit instruction on the desired result.
 
 Machine learning is teaching a computer to make predictions or judgments. To train a model, you first need an algorithm and some example data. Then, you integrate your model into your application to generate real-time and scalable insights. Supervised and unsupervised learning are two distinct types of algorithms.
 
+<img width="1600" height="896" alt="image" src="https://github.com/user-attachments/assets/4a6b2188-119d-4c25-a87d-7245304f4aef" />
 
 
 In unsupervised learning, the model is tasked with exploring the data and finding hidden structures within it. This can involve grouping similar data points together (clustering), discovering associations between different features (association rule learning), or estimating the probability distribution of the data (probability density estimation).
