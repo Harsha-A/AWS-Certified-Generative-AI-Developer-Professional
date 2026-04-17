@@ -4197,7 +4197,15 @@ The option that says: AWS Elastic Beanstalk is incorrect because it is a platfor
 
 
 ------------------
-<img width="1600" height="896" alt="image" src="https://github.com/user-attachments/assets/6ea3b9d7-8791-4b4b-8d82-12fa5f645d88" />
+
+Category: AIF – Fundamentals of AI and ML
+A streaming service wants to analyze its user data to improve content recommendations. The data science team needs to group users with similar viewing habits, identify common patterns in the types of shows watched together, and estimate how users’ preferences are spread across different genres.
+
+Match each unsupervised learning approach the data science team must consider with its correct objective. (Select THREE.)
+
+- To estimate how users’ preferences are spread across different genres - Probability density
+- To identify common patterns in the types of shows watched together - Association rule learning
+- To group users with similar viewing habits - Clustering
 
 
 Unsupervised learning is a kind of machine learning in which the algorithm is developed on data without labeled results. Unsupervised learning, as opposed to supervised learning, which requires the model to be given both input data and output labels, works with data that only contains input features. Unsupervised learning seeks to find underlying patterns, structures, or relationships in data without explicit instruction on the desired result.
@@ -4229,7 +4237,387 @@ The option that says: Logistic regression is incorrect because it is another sup
 
  ---------------------------
 
+ 2. Question
+Category: AIF – Fundamentals of AI and ML
+A financial services company is building a machine-learning model to detect fraudulent transactions. The data science team is using Amazon SageMaker Pipelines to automate their machine learning workflows. They need to complete several tasks to ensure the accuracy and efficiency of their model.
+
+Choose the appropriate Amazon SageMaker Pipelines step for each task from the list below. Each step should be selected only once. (Select FOUR.)
+
+Deploy the trained model to a hosting environment for inference - CreateModel
+Train the machine learning model using the prepared data - Training
+Evaluate the trained model to ensure it meets the required performance standards - QualityCheck
+Preprocess the dataset, including feature engineering, to make it suitable for training - Processing
+
+
+An Amazon SageMaker Model Building Pipeline is a set of interconnected stages defined with the Pipelines SDK or a JSON schema. The pipeline is structured as a directed acyclic graph (DAG), which depicts the dependencies and relationships between phases. These data dependencies form when the output of one phase is used as input for another, determining the order of execution within the pipeline. The image below shows an example of a pipeline DAG:
+
+<img width="1600" height="896" alt="image" src="https://github.com/user-attachments/assets/41e61d27-35df-4f36-8675-01c811500c4d" />
+
+SageMaker Pipelines consist of various steps. These steps specify the actions the pipeline performs and establish relationships between the steps through defined properties.
+
+Amazon SageMaker Model Building Pipelines support various step types, including:
+
+CreateModel – This step creates a deployable SageMaker model from the trained artifacts, preparing it for inference in a production environment.
+
+Training – It handles training the machine learning model using the prepared data, generating the model artifacts needed for deployment.
+
+QualityCheck – This step evaluates the model to ensure it meets performance and quality standards before being deployed.
+
+Processing – It preprocesses and transforms raw data into a suitable format for model training.
+
+Hence, the correct answers are:
+
+– Deploy the trained model to a hosting environment for inference: CreateModel 
+
+– Train the machine learning model using the prepared data: Training
+
+– To estimate how users’ preferences are spread across different genres: QualityCheck 
+
+– Preprocess the dataset, including feature engineering, to make it suitable for training: Processing
+
+The option that says: Computer Vision is incorrect because this service is only focused on analyzing visual data, such as images and videos, rather than performing tasks related to the machine learning pipeline in this scenario.
+
+----------------------
+
+Supervised Learning is a machine learning approach where a model is trained on a labeled dataset. This means the dataset contains input-output pairs where the desired output is known. The key advantage of Supervised Learning is that it allows the model to learn the relationship between input features like product categories and prices and output label return status, which enables accurate forecasting of future events.
+
+<img width="1587" height="491" alt="image" src="https://github.com/user-attachments/assets/f0dfa761-59a2-4e48-82b3-4cfff4b150af" />
+
+
+Amazon SageMaker provides robust support for supervised learning tasks. SageMaker simplifies the process of building, training, and deploying machine learning models by offering a range of built-in algorithms and tools. It integrates seamlessly with Amazon S3, allowing users to easily access and manage their labeled datasets stored in S3 buckets. SageMaker’s capabilities include data preprocessing, model training, hyperparameter tuning, and deployment, making it an ideal choice for implementing supervised learning models in a scalable and efficient manner.
+
+Hence, the correct answer is: Supervised Learning.
+
+The option that says: Few-shot learning is incorrect. This machine learning method is only used when the data available for training is limited. It enables models to generalize from just a few examples.
+
+The option that says: Transfer learning is incorrect because this is generally used when you have a pre-trained model that can be fine-tuned on a specific task. In this scenario, the focus is on using a labeled dataset to predict a specific outcome, making supervised learning a better fit.
+
+The option that says: Unsupervised learning is incorrect. This method is only used for analyzing and clustering data without labeled outputs. It is often applied in scenarios where the goal is to discover hidden patterns or groupings within the data, such as customer segmentation or anomaly detection.
+
+------------------------
+
+
+The model monitoring system must capture data, compare that data to the training set, define rules to detect issues and send alerts. This process repeats on a defined schedule when initiated by an event or when initiated by human intervention. The issues detected in the monitoring phase include data quality, model quality, bias drift, and feature attribution drift.
+
+Key components of the monitoring system include:
+
+– Model Explainability: Verifies that the model’s predictions are understandable and reliable.
+
+– Detect Drift: Identifies significant changes in data (data drift) and target variable properties (concept drift), alerting the system to potential performance issues.
+
+– Model Update Pipeline: Re-trains the model if issues are detected, ensuring continuous improvement.
+
+<img width="1084" height="640" alt="image" src="https://github.com/user-attachments/assets/ef46a150-2677-46ee-bb06-271820c5484a" />
+
+Model monitoring is a crucial stage in the machine learning operations lifecycle, where the deployed model’s performance is continuously monitored to ensure its operational readiness and effectiveness.
+
+Hence, the correct answer is: Model Monitoring.
+
+The option that says: Data Collection is incorrect because data collection focuses only on gathering the necessary data for model training rather than monitoring the model’s performance in production.
+
+The option that says: Model Evaluation is incorrect because model evaluation typically occurs during the development phase to assess the model’s performance using test data, not to monitor its ongoing effectiveness.
+
+The option that says: Model Training is incorrect because this is the phase where the model is developed and fine-tuned using historical data. Model training is done before deployment.Its scope does not address operational readiness or performance monitoring post-deployment.
+
+------------------------------
+
+Amazon SageMaker Model Parallelism is a feature designed to help train large deep-learning models that cannot fit into the memory of a single GPU. This feature automatically partitions the model across multiple GPUs, efficiently training very large models. By distributing the model layers across different GPUs, SageMaker Model Parallelism enables the more effective utilization of memory and computational resources. This distribution helps reduce the training time and allows for handling models that are otherwise too large to be trained on a single GPU.
+
+<img width="940" height="788" alt="image" src="https://github.com/user-attachments/assets/1bbe206a-0696-43d9-a026-33ba6fe585ca" />
+
+The Amazon SageMaker Model Parallelism feature includes automated optimization techniques to minimize communication overhead between GPUs. It combines techniques such as pipeline parallelism, tensor parallelism, and data parallelism. These optimizations are crucial for maintaining high training throughput and ensuring that the distributed training process is efficient. By leveraging these techniques, Amazon SageMaker Model Parallelism makes it feasible to train increasingly large and complex state-of-the-art deep learning models.
+
+Hence, the correct answer is: Model Parallelism.
+
+Managed Spot Training is incorrect. This built-in option is designed to reduce the cost of training jobs by utilizing spare EC2 capacity at a lower price compared to on-demand instances. Thus, Managed Spot Training focuses on cost-efficiency rather than the distribution of large models across multiple GPUs, making it irrelevant to the problem of training very large models.
+
+Incremental Training is incorrect because it only enables a model to be further trained with additional data, leveraging previously learned weights. While this method is beneficial for updating a model with new data without retraining from the beginning, it doesn’t aid in distributing a large model across multiple GPUs. Therefore, Incremental Training isn’t designed to address memory constraints or optimize the training process for very large models that cannot fit into the memory of a single GPU.
+
+Pipe Mode is incorrect. This option optimizes the input data pipeline by streaming data directly from Amazon S3 to the training instances. This helps to efficiently handle large datasets by reducing data loading times and improving the overall throughput of the training process. However, Pipe Mode does not address the challenge of distributing a large model across multiple GPUs. It’s primarily used for data handling rather than model distribution.
+
+---------------------------
+
+7. Question
+Category: AIF – Fundamentals of AI and ML
+A company wants to customize a foundational model using Amazon Bedrock.
+
+Select and order the prerequisites for customizing a foundational model. Each step should be selected one time. (Select and order THREE.)
+
+Prepare the training dataset
+
+Set the maximum tokens for model responses
+
+Purchase Provisioned Throughput
+
+Evaluate the results of model training
+
+Configure AWS KMS keys
+
+Create a fine-tuning or pre-training job
+
+Ans: 
+Model customization is the process of taking a large, pre-trained model and further training it on a smaller, specialized dataset related to your use case. This approach leverages the knowledge acquired during the initial pre-training phase while adapting the model to your requirements without losing the original capabilities.
+
+Amazon Bedrock currently provides the following customization methods:
+
+Continued Pre-training
+
+Provide unlabeled data to pre-train a foundation model by familiarizing it with certain types of inputs. You can provide data from specific topics in order to expose a model to those areas. The Continued Pre-training process will tweak the model parameters to accommodate the input data and improve domain knowledge.
+
+For example, you can train a model with private data, such as business documents, that are not publicly available for training large language models. Additionally, you can continue to improve the model by retraining the model with more unlabeled data as it becomes available.
+
+Fine-tuning
+
+Provide labeled data to train a model to improve performance on specific tasks. By providing a training dataset of labeled examples, the model learns to associate what types of outputs should be generated for certain types of inputs. The model parameters are adjusted in the process and the model’s performance is improved for the tasks represented by the training dataset.
+
+<img width="1000" height="802" alt="image" src="https://github.com/user-attachments/assets/4e838caf-58d8-4557-8bf5-7cf765d42dc2" />
+
+To customize a foundational model using Amazon Bedrock, the prerequisites should be ordered as follows:
+
+Prepare the training dataset
+
+Before you can start customizing a model, you must prepare a training dataset to fine-tune or train the model according to your specific needs.
+
+Create a fine-tuning or pre-training job
+
+Depending on your training data and objectives, you might either fine-tune or pre-train the model. If fine-tuning, the training data is usually labeled and tailored to specific domains, helping to adapt the foundational model to your needs. Conversely, pre-training involves training the model on a broader, often unlabeled dataset to build foundational knowledge.
+
+Purchase Provisioned Throughput
+
+Once the custom model is created, you must purchase provisioned throughput to use it for inference.
+
+Hence, the correct answers are:
+
+– Step 1: Prepare the training dataset
+
+– Step 2: Create a fine-tuning or pre-training job
+
+– Step 3: Purchase Provisioned Throughput
+
+The option that says: Set the maximum tokens for model responses is incorrect. This step is related to configuring how the model responds to queries. It is usually done after the model has been fine-tuned and is ready for deployment.
+
+The option that says: Evaluate the results of model training is incorrect. Although this step is crucial for improving model performance and ensuring it meets the desired objectives, it’s not a required step for customizing a foundational model.
+
+The option that says: Configure AWS KMS keys is incorrect because this is just an optional step that you can do if you want model artifacts to be encrypted. While it’s something that you must consider for security purposes, it’s not a mandatory step for customizing a model itself.
+
+---------------------
+
+
+8. Question
+Category: AIF – Fundamentals of AI and ML
+A financial company has collected 2 years of daily transaction data stored in an Amazon S3 bucket. To enhance liquidity management, financial planning, and resource allocation, they plan to develop a machine-learning model to forecast transaction volumes for the next 90 days.
+
+Which type of algorithm should the company use?
+
+Ans:
+Forecasting algorithms are crucial in predictive analytics, especially for predicting future values based on historical patterns in time series data. AWS offers strong forecasting capabilities through Amazon SageMaker Canvas, a fully managed service that utilizes machine learning to provide accurate time-series predictions. Amazon SageMaker Canvas, automatically manages the complexities of selecting and fine-tuning the appropriate algorithms based on the input data, making it an ideal solution for businesses seeking to enhance their financial planning and resource allocation.
+
+<img width="1920" height="801" alt="image" src="https://github.com/user-attachments/assets/581f892f-96cd-4177-a18f-ab863003c0a5" />
+
+By using Amazon SageMaker Canvas, the company can utilize advanced statistical algorithms that consider various factors such as seasonality, trends, and irregular patterns in the transaction data. These algorithms provide more accurate and reliable forecasts than traditional methods, helping the company to optimize liquidity management and make informed financial decisions. The service also offers the flexibility to integrate multiple datasets, such as transaction data, economic indicators, and historical trends, to enhance prediction accuracy.
+
+Hence, the correct answer is: Forecasting algorithm.
+
+The option that says: Linear Learner algorithm is incorrect because it is typically used for tasks involving finding a linear relationship between input features and target variables, typically for regression tasks. While it can be used for time series data, it may not effectively capture the temporal dependencies and patterns, making it less suitable for this specific task.
+
+The option that says: Object2Vec algorithm is incorrect. This algorithm is primarily used for creating embeddings for objects or entities so that similar objects are closer in the vector space. This is useful for tasks like recommendations or similarity-based queries, but it does not directly address time series forecasting.
+
+The option that says: Clustering algorithm is incorrect because this algorithm is only used for grouping similar data points into clusters. This approach is not suitable for forecasting tasks, as the goal here is to predict future values rather than group data points.
+
+----------------------------
+
+
+9. Question
+Category: AIF – Fundamentals of AI and ML
+A financial expert is building a model to predict the future value of a portfolio based on historical performance, asset allocation, and market trends. The prediction model will help in making investment decisions and optimizing the portfolio allocation strategy.
+
+Which machine-learning technique should be considered to meet this objective?
+
+Ans:
+
+Regression is a supervised learning technique used for predicting continuous values. It involves determining the relationship between a dependent variable and one or more independent variables. By analyzing the patterns in historical data, regression models can predict future outcomes, making it ideal for tasks like forecasting stock prices, real estate values, or portfolio performance.
+
+Linear regression refers to supervised learning models that use one or more inputs to predict a value on a continuous scale. It is used to predict housing prices. After training a model using a set of historical sales training data that includes those characteristics, you could forecast the price of a property based on its location, age, and number of rooms.
+
+<img width="2000" height="1200" alt="image" src="https://github.com/user-attachments/assets/0e4a8173-1e89-4f43-b7f9-f1f8c6cfa03f" />
+
+Just like the red line in the image represents the best-fit relationship between the x and y values, regression models use historical performance, asset allocation, and market trends to predict the future value of a portfolio. This allows for accurate predictions, aiding in informed investment decisions and optimized portfolio strategies. Using these input features, regression models can effectively learn the relationship between these features and the portfolio value.
+
+Hence, the correct answer is: Linear Regression.
+
+The option that says: Probability density is incorrect because this option is generally used to estimate the likelihood or possibility of a random variable falling within a particular range of values, not for predicting future values based on historical data.
+
+The option that says: Dimensionality reduction is incorrect because it is primarily used to reduce the number of features in a dataset while retaining as much information as possible. It is not used for prediction tasks directly.
+
+The option that says: Anomaly detection is incorrect because it is only used to identify outliers or unusual patterns in data, which is not the primary goal of predicting continuous portfolio values.
+
+------------------------
+
+10. Question
+Category: AIF – Fundamentals of AI and ML
+An e-commerce company uses Amazon SageMaker to build an ML model for customer review segmentation. They need a feature for efficient data cleansing and preparation with minimal coding.
+
+Which SageMaker feature should they use?
+
+Amazon SageMaker Ground Truth
+Amazon SageMaker Autopilot
+Amazon SageMaker Feature Store
+Amazon SageMaker Data Wrangler ?
+
+Ans: 
+
+
+Amazon SageMaker Data Wrangler is a SageMaker feature designed to simplify the data preparation process for machine learning workflows. Data Wrangler provides a visual interface that lets users import data from various sources, perform transformations, and analyze data quality without extensive coding. The tool seamlessly integrates with other Amazon SageMaker services, enabling data scientists to clean, transform, and explore data directly within the SageMaker environment. This simplifies preparing data for machine learning models, reducing the time and effort typically required for data preparation.
+
+<img width="1920" height="925" alt="image" src="https://github.com/user-attachments/assets/eb6c5d9b-d644-44b0-9170-4b94cfaa7006" />
+
+
+One of the key features of SageMaker Data Wrangler is its ability to automate complex data transformation tasks, such as handling missing values, normalizing data, and creating new features. It also provides built-in visualization tools that help users understand data distributions and identify potential issues before training models. With support for over 300 built-in transformations and compatibility with popular data sources, Data Wrangler is designed to streamline the entire data preparation process, enabling users to focus more on model building and less on manual data wrangling.
+
+Hence, the correct answer is: Amazon SageMaker Data Wrangler.
+
+The option that says: Amazon SageMaker Autopilot is incorrect. This feature helps automate the entire machine learning workflow, from feature engineering to model selection and hyperparameter tuning. While it significantly reduces the effort needed to build and train models, it does not specifically focus on data cleansing and preparation tasks. Autopilot is designed to automate the end-to-end process of model creation rather than address the complexities of preparing and transforming raw data, which is the primary requirement in this scenario.
+
+The option that says: Amazon SageMaker Feature Store is incorrect. This option is primarily a centralized repository for storing and managing features used in machine learning models. It allows users to share and reuse features across different models but does not provide data cleansing, transformation, or preparation tools. Feature Store is more about storing and retrieving features efficiently rather than preparing raw data for model training.
+
+The option that says: Amazon SageMaker Ground Truth is incorrect because it is a service used to build high-quality labeled datasets by offering data labeling and annotation capabilities. It is only designed to help users create training datasets by labeling data with minimal effort through human and automated labeling techniques. However, Ground Truth is not intended for data cleansing or preparation tasks, making it unsuitable for this scenario where the focus is on simplifying data preparation.
+
+------------------
+
+11. Question
+Category: AIF – Security, Compliance, and Governance for AI Solutions
+A fintech company is developing an AI-based system for detecting fraudulent activities. The company must implement security measures to ensure data integrity, safeguard user privacy, and comply with regulations. The goal is to align security strategies with relevant foundational security capabilities.
+
+Match each foundational security capability with its relevant strategy for securing the AI-powered fraud detection system. Each capability should be selected once only. (Select THREE.)
+
+It ensures that visibility, secure access, and control over the data used for AI development and implementation are maintained. - Data protection
+
+Implement real-time monitoring and anomaly detection tools to identify and respond to potential security incidents in AI workloads. - Threat detection
+
+It ensure that vulnerabilities are identified and addressed throughout the software development lifecycle for AI workloads. - Application security
+
+
+Ans :
+
+Effective security practices are essential for protecting AI systems from various threats, ensuring they operate securely, and complying with relevant regulations. Organizations can instill confidence in their AI solutions by aligning strategies with foundational security capabilities, thereby effectively safeguarding their systems.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c599df66-d60d-4552-a59c-a9a4b7b022dd" />
+
+
+Data protection involves safeguarding sensitive information from unauthorized access and breaches to ensure data remains confidential and intact. This strategy focuses on implementing strong data control measures, including encryption, access restrictions, and monitoring to prevent unauthorized access. Organizations can avoid data breaches and maintain data integrity by ensuring that only authorized individuals can view or modify data and by protecting data both in transit and at rest.
+
+Threat detection involves identifying and addressing potential security threats in real-time, which is crucial for responding quickly to possible security issues and minimizing their impact. This approach requires setting up tools and systems to monitor AI applications for unusual or suspicious activities continuously. Organizations can promptly investigate and address potential security threats by detecting anomalies and issuing alerts before they cause significant harm.
+
+Application security involves identifying and addressing vulnerabilities within software applications to prevent exploitation by attackers and ensure the security of applications. This strategy includes integrating security practices throughout the development process, such as conducting regular code reviews, security testing, and vulnerability assessments. Addressing security issues early in the development process helps organizations reduce the risk of vulnerabilities being exploited after the application is deployed.
+
+Hence, the correct answers are:
+
+– It ensures that visibility, secure access, and control over the data used for AI development and implementation are maintained: Data protection
+
+– Implement real-time monitoring and anomaly detection tools to identify and respond to potential security incidents in AI workloads: Threat detection 
+
+– It ensures that vulnerabilities are identified and addressed throughout the software development lifecycle for AI workloads: Application security 
+
+The option that says: Infrastructure protection is incorrect. This foundational capability primarily worked on securing the systems and services used to operate AI workloads. This includes securing endpoints, applying network and storage security controls, and using encryption for data in transit. However, while this practice is important for maintaining the overall security of systems and services, it does not directly align with the specific strategies outlined for the foundational security capabilities.
+
+--------------
+
+Traditional Machine Learning (ML) models use structured data and predetermined algorithms to predict or classify. These models often require human intervention for feature engineering and are ideal for tasks such as regression, classification, and grouping. Traditional machine learning models include linear regression, decision trees, and logistic regression.
+
+<img width="1600" height="896" alt="image" src="https://github.com/user-attachments/assets/6f21e8cf-69de-4432-885f-a47372892042" />
+
+
+On the other hand, Generative AI models, including Generative Adversarial Networks (GANs) and large-scale language models, focus on creating new content such as images, text, or even entire datasets. These models learn from vast amounts of unstructured data and are designed to generate unique and creative outputs, making them ideal for tasks that require content creation or translation between modalities.
+
+Hence, the correct answers are:
+
+– Translate patents from English to French, including embedded images like technical diagrams: Generative AI model
+
+– Predict customer subscription cancellations for a telecom provider based on historical usage data: Traditional ML model 
+
+– Create innovative visual designs from text-based advertising briefs: Generative AI model 
+
+– Identify the sentiment behind customer feedback and social media posts: Traditional ML model 
  
+------------------------
+
+13. Question
+Category: AIF – Fundamentals of AI and ML
+What term refers to a branch of AI that enables systems to learn and make predictions based on data without being explicitly structured?
+
+Machine Learning
+Predictive analytics
+Object-oriented programming
+Natural Language Processing (NLP)
+
+Machine learning (ML) is a branch of artificial intelligence that focuses on developing algorithms that use mathematical and statistical models to perform data analysis tasks without explicit instructions. Machine learning algorithms can analyze enormous amounts of historical data and detect trends. They can apply the patterns to forecast new relationships between previously unknown data points. Data scientists, for example, may develop a machine learning model to detect cancer from X-ray scans using millions of scanned images and diagnoses. Machine learning algorithms may perform classification and prediction tasks using text, numerical, and image data.
+
+<img width="1200" height="672" alt="image" src="https://github.com/user-attachments/assets/97b46f3b-0486-4700-a790-dee75b861531" />
+
+
+The image above image shows the lifecycle of Machine Learning.
+
+Hence, the correct answer is: Machine Learning.
+
+The option that says: Object-oriented programming is incorrect because it simply refers to a programming paradigm focused on using objects and classes to structure software development, not a branch of AI related to learning from data.
+
+The option that says: Predictive analytics is incorrect because it only involves using statistical techniques to forecast outcomes based on historical data, but it does not inherently include the self-learning mechanisms found in machine learning.
+
+The option that says: Natural Language Processing (NLP) is incorrect because this option is a specific branch of AI focused on interactions between computers and human languages, not on learning from data and making predictions based on that learning process.
+
+-----------------------
+
+15. Question
+Category: AIF – Fundamentals of AI and ML
+Select the correct Amazon SageMaker AI inference options from the following list for each job. Each inference option may be selected one or more times. (Select THREE.)
+
+Use for low-latency workloads with predictable traffic patterns that need consistent latency characteristics and are always available. - Real-time Inference
+
+Ideal for synchronous workloads with spiky traffic patterns that can tolerate latency variations. - Serverless Inference
+
+Choose for processing large sets of data offline without requiring a persistent endpoint. - Batch Inference
+
+Ans : 
+
+Amazon SageMaker AI offers various inference options tailored to different workload needs:
+
+Real-time Inference: Used for low-latency, predictable traffic patterns requiring consistent availability. It is ideal when the service needs to be always available.
+
+Serverless Inference: Suitable for workloads with spiky traffic patterns that can tolerate latency variations. It automatically scales, and you only pay during inference requests, making it cost-effective for unpredictable usage.
+
+Batch Inference: Best for offline processes that require inference on large datasets. You pay only for the duration of the job, making it ideal when continuous availability is not needed.
+SageMaker Inference Endpoint
+
+<img width="1022" height="754" alt="image" src="https://github.com/user-attachments/assets/8dafa84b-7078-4875-bfd1-becdea3c3ecb" />
+
+Hence, the correct answers are:
+
+– Use for low-latency workloads with predictable traffic patterns that need consistent latency characteristics and are always available: Real-time Inference
+
+– Ideal for synchronous workloads with spiky traffic patterns that can tolerate latency variations: Serverless Inference
+
+– Choose for processing large sets of data offline without requiring a persistent endpoint: Batch Inference
+
+The option that says: Asynchronous Inference is incorrect because asynchronous inference is typically used for asynchronous processing, where latency is less critical. It simply helps in cost control by scaling down instances when not in use, which is beneficial for cost-sensitive scenarios.
+
+
+----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
