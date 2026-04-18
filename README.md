@@ -3521,7 +3521,25 @@ The Open Web Application Security Project (OWASP) is a well-known nonprofit orga
 
 <img width="1025" height="803" alt="image" src="https://github.com/user-attachments/assets/9d4d8280-0146-41c2-97a0-a0910d5f2ea3" />
 
+Prompt Injection involves manipulating the AI model’s input prompts to cause it to produce unintended or harmful outputs. It is crucial to address this vulnerability to prevent malicious users from exploiting the model’s behavior.
 
+Training data poisoning involves attackers manipulating the training data to corrupt the AI model’s learning process. This vulnerability can significantly impact the model’s accuracy and reliability, making it a critical concern.
+
+Model denial of service involves overwhelming the AI system with excessive or malicious requests to exhaust its computational resources. This can lead to degraded performance or unavailability, a critical issue for customer-facing applications.
+
+Hence, the correct answers are:
+
+– Prompt Injection
+
+– Training data poisoning
+
+– Model denial of service
+
+Excessive agency is incorrect because excessive agency refers primarily to the idea that AI might overstep or be given too much authority. It is not typically categorized as a direct security vulnerability that affects the model’s integrity.
+
+Model theft is incorrect because it does not immediately impact the model’s performance, behavior, or availability. Attacks such as prompt injection or denial of service can cause real-time disruptions, like altering outputs or blocking access to services. In contrast, model theft is typically a covert, gradual process aimed at intellectual property, without directly affecting system operations. Although it is a serious concern, it is less urgent in customer-facing environments where uptime and response integrity are critical.
+
+Overreliance on AI capabilities is incorrect because while overreliance might lead to decision-making or operational efficiency issues, it does not directly pertain to a specific security vulnerability.
 ---------------
 
 Amazon Macie uses machine learning to automatically discover sensitive data within your S3 buckets. It scans objects and identifies patterns that match common types of sensitive information, such as personally identifiable information (PII), credit card numbers, and intellectual property.
