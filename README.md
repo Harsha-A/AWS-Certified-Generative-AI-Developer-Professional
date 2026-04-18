@@ -4670,7 +4670,33 @@ The option that says: Amazon SageMaker Data Wrangler is incorrect because it’s
 
 ----------------------
 
+15. Question
+Category: AIF – Security, Compliance, and Governance for AI Solutions
+A data scientist uses Amazon SageMaker for a machine learning project to classify images of plant species. The datasets need to be securely stored, easily accessible for training, and efficiently managed throughout the project.
 
+Which of the following would you use to store and manage your dataset for this machine learning project?
+
+Amazon S3
+Amazon Fsx
+AWS Snowcone
+Amazon EFS
+
+Amazon S3 (Simple Storage Service) is designed for scalable object storage. It is highly integrated with Amazon SageMaker, making storing large datasets and retrieving them for training machine learning models easy. S3 provides secure, durable, and highly available storage, which is essential for managing datasets in machine learning projects.
+
+<img width="908" height="770" alt="image" src="https://github.com/user-attachments/assets/3da40e26-9b97-4e35-b613-f3a078e89196" />
+
+
+Hence, the correct answer is: Amazon S3.
+
+The option that says: Amazon FSx is incorrect because this service primarily provides fully managed file storage. While it is suitable for applications requiring high-performance file systems, it is not the primary choice for storing large datasets for machine learning projects in SageMaker. S3 is more optimized for this use case.
+
+The option that says: Amazon EFS is incorrect. Amazon EFS (Elastic File System) is a scalable file storage service for use with AWS Cloud services and on-premises resources. It is typically designed for applications that require a file system interface and file system semantics. However, for storing and managing large datasets for machine learning, S3 is more appropriate due to its integration with SageMaker and its object storage capabilities.
+
+The option that says: AWS Snowcone is incorrect. AWS Snowcone is a small, rugged, and secure edge computing and data transfer device. It is used for edge computing, data migration, and edge storage. While it can be used to transfer data to AWS, it is not designed for ongoing storage and management of datasets for machine learning projects in SageMaker.
+
+ ---------------------------
+
+ 
  
  
 
