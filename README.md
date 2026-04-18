@@ -3540,6 +3540,7 @@ Excessive agency is incorrect because excessive agency refers primarily to the i
 Model theft is incorrect because it does not immediately impact the model’s performance, behavior, or availability. Attacks such as prompt injection or denial of service can cause real-time disruptions, like altering outputs or blocking access to services. In contrast, model theft is typically a covert, gradual process aimed at intellectual property, without directly affecting system operations. Although it is a serious concern, it is less urgent in customer-facing environments where uptime and response integrity are critical.
 
 Overreliance on AI capabilities is incorrect because while overreliance might lead to decision-making or operational efficiency issues, it does not directly pertain to a specific security vulnerability.
+
 ---------------
 
 Amazon Macie uses machine learning to automatically discover sensitive data within your S3 buckets. It scans objects and identifies patterns that match common types of sensitive information, such as personally identifiable information (PII), credit card numbers, and intellectual property.
