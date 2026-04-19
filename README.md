@@ -4696,7 +4696,35 @@ The option that says: AWS Snowcone is incorrect. AWS Snowcone is a small, rugged
 
  ---------------------------
 
- 
+ 10. Question
+Category: AIF – Fundamentals of Generative AI
+A retail company wants a chatbot to assist customers with product recommendations and order inquiries. The chatbot must use the product catalog and order history stored in Amazon S3. The company needs a fully managed service that handles natural language understanding, model selection, and conversation flow with minimal setup and maintenance.
+
+Which AWS service would be the MOST suitable choice for this use case?
+
+Amazon Lex
+Amazon Transcribe
+Amazon Kendra
+Amazon Q Business
+
+Amazon Lex is a fully managed service that enables the creation of sophisticated and natural conversational experiences, such as interactive voice response (IVR) systems, chatbots, and voice-enabled applications.
+
+<img width="1002" height="757" alt="image" src="https://github.com/user-attachments/assets/f4a6b8af-77cc-4dd1-b27e-8407ca02720b" />
+
+
+By using Amazon Lex, the retail company can focus on designing and building the conversational experience for their customers, leveraging Lex’s natural language processing capabilities and seamless integration with their data sources in Amazon S3. Additionally, as a fully managed service, Lex minimizes the operational overhead, allowing the company to concentrate on delivering an engaging and efficient customer experience.
+
+Hence, the correct answer is Amazon Lex.
+
+The option that says: Amazon Q Business is incorrect because it is a generative-AI powered assistant designed primarily for enterprises to answer questions, provide summaries, generate content, and automate tasks using their own data sources. It is not specifically focused on building conversational interfaces like chatbots, which is the primary requirement for the retail company’s use case.
+
+The option that says: Amazon Kendra is incorrect because it is mainly focused on intelligent search and is not the best fit for building a conversational AI system like a chatbot.
+
+The option that says: Amazon Transcribe is incorrect because this is just an automatic speech recognition service and does not provide the capabilities required for building a conversational AI system that can understand natural language and provide relevant responses based on product and order data.
+
+-------------------
+
+
  
  
 
